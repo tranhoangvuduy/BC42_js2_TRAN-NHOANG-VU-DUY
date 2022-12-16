@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bai tap js2</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BT1:Tính tiền lương nhân viên -->
+    <br>
+    <br>
+
+    <div class="form-group container">
+        <h4>BT1: Tính tiền lương nhân viên</h4>
+        <div class="form-group">
+            <p>Tiền lương 1 ngày</p>
+            <input id="tienLuong1ngay" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Số ngày làm</p>
+            <input id="soNgaylam" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <button id="btnTinhtien" class="btn btn-success">Tính lương</button>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="tongLuong"></span>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+
+    <!-- BT2: Tính giá trị trung bình của 5 số -->
+    <div class="form-group container">
+        <h4>BT2: Tính giá trị trung bình của 5 số</h4>
+        <div class="form-group">
+            <p>Nhập số thứ 1</p>
+            <input id="soThuNhat" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Nhập số thứ 2</p>
+            <input id="soThuHai" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Nhập số thứ 3</p>
+            <input id="soThuBa" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Nhập số thứ 4</p>
+            <input id="soThuTu" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Nhập số thứ 5</p>
+            <input id="sothuNam" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <button id="btnTinhTrungBinh" class="btn btn-success">Tính trung bình</button>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="trungBinh"></span>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- BT3: Đổi tiền từ USD sang VNĐ, giá 1 USD = 23,500 Đồng -->
+    <div class="form-group container">
+        <h4>BT3: Đổi tiền từ USD sang VNĐ, giá 1 USD = 23,500 Đồng </h4>
+        <div class="form-group">
+            <p>Nhập số tiền USD</p>
+            <input id="soTienDo" class="form-control w-25" type="text">
+        </div>
+        <br>
+
+        <button id="btnQuyDoiTien" class="btn btn-success">Quy đổi tiền</button>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="doiTien"></span>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- BT4: Tính diện tích, chu vi hình chữ Nhật -->
+    <div class="form-group container">
+        <h4>BT4: Tính diện tích, chu vi hình chữ Nhật </h4>
+        <div class="form-group">
+            <p>Nhập chiều dài</p>
+            <input id="chieuDai" class="form-control w-25" type="text">
+        </div>
+        <br>
+        <div class="form-group">
+            <p>Nhập chiều rộng</p>
+            <input id="chieuRong" class="form-control w-25" type="text">
+        </div>
+        <br>
+
+        <button id="btnTinh" class="btn btn-success">Tính</button>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="tinhPS"></span>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- BT5: Tính tổng 2 kí số -->
+    <div class="form-group container">
+        <h4>BT5: Tính tổng 2 kí số</h4>
+        <div class="form-group">
+            <p>Nhập số có 2 chữ số</p>
+            <input id="haiChuSo" class="form-control w-25" type="text">
+        </div>
+        <br>
+
+
+
+        <button id="btnTinhTong" class="btn btn-success">Tính tổng</button>
+        <div class="mt-2 alert alert-success">
+            Kết quả : <span id="tinhTong"></span>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- MY CSS -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
